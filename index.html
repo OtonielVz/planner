@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Otoniel Palacios Dev.-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Actividades</h1>
+    <section class="wrapper-inputs">
+        <label for="pending-input">Pending Lost</label>
+        <input type="number" name="Encontradas" placeholder="Encontradas" id="pending-input">
+        <button type="submit"  id="lost-send">Enviar</button>
+        <label for="dirigida-input">Auditorias Dirigidas</label>
+        <input type="number" name="Dirigidas" placeholder="Dirigidas Realizadas" id="dirigida-input">
+        <button type="submit" id="dirigida-send">Enviar</button>
+    </section>
+    <section class="wrapper-results">
+        <div class="container">
+            <h5>Pending Lost Semanal</h5>
+            <span>Meta: <strong>160</strong> Piezas</span>
+            <span class="pl-found">Pzas. Encontradas:</span>
+            <span class="pl-faltates">Pzas. Faltantes:</span>
+            <span class="cumplimiento">Cumplimiento: -</span>
+        </div>
+        <div class="container">
+            <h5>Auditoria Dirigida</h5>
+            <span>Meta: <strong>4</strong> Módulos</span>
+            <span class="dirigida-end">Realizadas:</span>
+            <span class="dirigida-rest">Faltantes:</span>
+            <span class="cumplimiento-dirigida">Cumplimiento: -</span>
+        </div>
+    </section>
+    <button style="width:6em; position: fixed; top: 20px; right: 20px;" class="reset">Limpiar</button>
+
+</body>
+<script src="pendingLost.js"></script>
+</html>
