@@ -86,3 +86,6 @@ label{
     font-size: 20px;
 }
 
+#export-csv{
+    width:10em; position: fixed; bottom: 20px; right: 120px;
+}
