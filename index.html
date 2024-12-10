@@ -7,35 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i.ibb.co/jy1GrBx/logo-nuevo.png" type="image/x-icon">
 </head>
 
 <body>
-    <h1>Actividades</h1>
     <section class="wrapper-inputs">
-        <label for="pending-input">Pending Lost</label>
+        <h1>Actividades💻</h1>
+        <label for="pending-input">Pending Lost🔎</label>
         <input type="number" name="Encontradas" placeholder="Encontradas" id="pending-input">
         <button type="submit"  id="lost-send">Enviar</button>
-        <label for="dirigida-input">Auditorias Dirigidas</label>
+        <label for="dirigida-input">Auditorias Dirigidas🔝</label>
         <input type="number" name="Dirigidas" placeholder="Dirigidas Realizadas" id="dirigida-input">
         <button type="submit" id="dirigida-send">Enviar</button>
+        <label for="caza-input">Caza Lost📟</label>
+        <input type="number" name="CazaLost" placeholder="Caza Lost" id="caza-input">
+        <button type="submit" id="cazaSend">Enviar</button>
     </section>
     <section class="wrapper-results">
         <div class="container">
             <h5>Pending Lost Semanal</h5>
             <span>Meta: <strong>160</strong> Piezas</span>
             <span class="pl-found">Pzas. Encontradas:</span>
-            <span class="pl-faltates">Pzas. Faltantes:</span>
-            <span class="cumplimiento">Cumplimiento: -</span>
+            <span class="pl-faltates">Pzas. Faltantes: </span>
+            <span class="cumplimiento">Cumplimiento: 0.00%</span>
         </div>
         <div class="container">
             <h5>Auditoria Dirigida</h5>
             <span>Meta: <strong>4</strong> Módulos</span>
+            <span class="dirigida-end">Realizadas: 0</span>
+            <span class="dirigida-rest">Faltantes: 4</span>
+            <span class="cumplimiento-dirigida">Cumplimiento: 0.00%</span>
+        </div>
+        <div class="container">
+            <h5>Caza Lost</h5>
+            <span class="meta-caza-lost">Meta: <strong>60</strong> Piezas analizadas</span>
+            <span class="caza-lost-end">Pzas. Encontradas: 0</span>
+            <span class="caza-lost-pendientes">Pzas. Faltantes: 60</span>
+            <span class="caza-lost-cumplimiento">Cumplimiento: 0.00%</span>
+        </div>
+        <div class="container">
+            <h5>Auditoria -</h5>
+            <span>Meta: <strong>-</strong> Módulos</span>
             <span class="dirigida-end">Realizadas:</span>
-            <span class="dirigida-rest">Faltantes:</span>
-            <span class="cumplimiento-dirigida">Cumplimiento: -</span>
+            <span class="dirigida-rest"></span>
+            <span class="cumplimiento-dirigida"></span>
         </div>
     </section>
     <button style="width:6em; position: fixed; top: 20px; right: 20px;" class="reset">Limpiar</button>
+    <button id="export-csv">Descargar Semana</button>
 
 </body>
 <script src="pendingLost.js"></script>
