@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 *{margin: 0; padding: 0; box-sizing: border-box;
 --color-box: #fff;}
+h1{cursor: pointer;}
 body{
     font-family: 'poppins';
     width: 100%;
@@ -9,7 +10,9 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    background-color: #f0f0f0;
+    background-color: #e8e7e7;
+    justify-content: center;
+    padding-top: 20px;
 }
 h1{
     display: block;    width: 100%;
@@ -18,7 +21,7 @@ h1{
 .wrapper-inputs{
     border: 1px solid rgb(170, 169, 169);
     width: 30em;
-    height: 90dvh;
+    height: 50dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,14 +32,14 @@ h1{
 }
 .wrapper-results{
     width: 50em;
-    height: 20em;
+    height: 40%;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;    
+    justify-content: center;   
 }
 .container{
-    border: 1px solid rgb(170, 169, 169);
+    border: 1px solid #aaa9a9;
     width: 20em;
     height: 9em;
     display: flex;
@@ -45,6 +48,12 @@ h1{
     border-radius: 8px;
     padding-inline: 20px;
     background-color: var(--color-box);
+    transition: all ease .2s;
+    cursor:pointer;
+    &:hover{
+        transform: scale(1.03);
+        background-color: #ffffff34;
+    }
 
 }
 
@@ -58,7 +67,7 @@ input{
     border-radius: 5px;
 }
 button{
-    width: 6em;
+    width: 11em;
     height: 1.8em;
     border: none;
     background-color: #2b2b2b;
@@ -74,4 +83,6 @@ button{
 
 label{
     font-weight: 600;
+    font-size: 20px;
 }
+
